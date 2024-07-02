@@ -2493,3 +2493,9 @@ Custom CSS added by Aman
     cursor: pointer;
   }
   
+  .owl-carousel {
+    /* max-height: 70vh; Set the maximum height */
+    display: flex;
+    justify-content: center; /* Center align the elements horizontally */
+    align-items: center; /* Center align the elements vertically */
+  }
