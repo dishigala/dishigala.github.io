@@ -96,7 +96,28 @@ $(document).ready(function() {
 
 
 // Window scroll function
-
+document.addEventListener('DOMContentLoaded', function() {
+    const pinLayer = document.querySelector('.pin-layer');
+    const pinInput = document.querySelector('#pin-input');
+    const pinSubmit = document.querySelector('#pin-submit');
+    const content = document.querySelector('#content');
+  
+    pinSubmit.addEventListener('click', function() {
+      const enteredPin = pinInput.value;
+      const correctPin = '0507142325'; // Replace with your desired PIN
+  
+      if (enteredPin === correctPin) {
+        
+        $("#preloader").fadeIn("slow");
+        setTimeout(function() {
+            $(".pin-layer").fadeOut("slow");
+            $('#preloader').fadeOut("slow");
+          }, 5000); // Set the time in milliseconds (5 seconds in this example)
+      } else {
+        alert('Incorrect PIN. Please try again.');
+      }
+    });
+  });
 $(window).scroll(function() {
 	
 	   // Shrink Navbar on Scroll 	
@@ -122,8 +143,9 @@ $(window).scroll(function() {
 $(window).load(function() {
 
     // Page Preloader 	
-
     $("#preloader").fadeOut("slow");
+
+    
 	
     // Pretty Photo
 
@@ -554,3 +576,5 @@ function populateDetails(name) {
 
 //   scoring system. Lives and final score.
 // Amans Message to be improved
+// Integrate with the original folder on movement to this page demand password
+

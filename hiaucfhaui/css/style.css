@@ -2499,3 +2499,33 @@ Custom CSS added by Aman
     justify-content: center; /* Center align the elements horizontally */
     align-items: center; /* Center align the elements vertically */
   }
+
+  .pin-layer {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    z-index: 9999;
+    transition: background-color 4s ease-in-out 5s;
+  }
+  
+  .pin-layer input[type="password"] {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #6f738a5a;
+  }
+  
+  .pin-layer button {
+    padding: 10px 20px;
+    margin: 1rem;
+    font-size: 18px;
+    background-color: #6f738a;
+    color: #fff;
+    border: none;
+  }
