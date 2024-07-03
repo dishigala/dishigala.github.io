@@ -452,8 +452,13 @@ x = setInterval(function() {
     head.style.display = 'initial';
     count.style.display = 'initial';
   } else {
-    head.style.display = 'none';
-    count.style.display = 'none';
+    document.getElementById('day').innerText = 0;
+  document.getElementById('hour').innerText = 0;
+  document.getElementById('minute').innerText = 0;
+  document.getElementById('second').innerText = 0;
+    head.style.display = 'initial';
+    count.style.display = 'initial';
+    count.innerHTML = "<h1>The time has finally come </h1>";
     giftbox.style.display = 'initial';
     clearInterval(x);
     let merrywrap = document.getElementById('merrywrap');
