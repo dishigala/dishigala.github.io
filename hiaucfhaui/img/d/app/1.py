@@ -3,7 +3,7 @@ import re
 import shutil
 
 # Directory where the files are located
-directory = "C:\\Users\\aman\\Desktop\\Personal\\D\\Dishita's Bday Celebrations (File responses)-20240701T121959Z-001\\Dishita_s Bday Celebrations (File responses)\\Upload the cover photo of your memories (File responses)\\"
+directory = "C:\\Users\\aman\\Desktop\\Personal\\D\\birthday-master\\birthday-master\\hiaucfhaui\\img\\d"
 
 # Get a list of all the files in the directory
 file_list = os.listdir(directory)

@@ -4,7 +4,7 @@ from PIL import Image, ImageOps
 canvas_width = 900
 canvas_height = 1600
 
-image_directory = ".."
+image_directory = "."
 
 def create_canvas(image_path):
     img = Image.open(image_path)
@@ -48,4 +48,16 @@ def convert_images(image_directory):
                     output_path = os.path.join(person_folder_path, output_filename)
                     canvas.save(output_path, "WEBP")
 
-convert_images(image_directory)
+def convert_images_person(person_folder_path):    
+    if os.path.isdir(person_folder_path):
+        for filename in os.listdir(person_folder_path):
+            if filename.endswith(".jpg") or filename.endswith(".jpeg") or filename.endswith(".png") or filename.endswith(".JPG") or filename.endswith(".PNG"):
+                image_path = os.path.join(person_folder_path, filename)
+                print(image_path)
+                canvas = create_canvas(image_path)
+
+                output_filename = f"{os.path.splitext(filename)[0]}.webp"
+                output_path = os.path.join(person_folder_path, output_filename)
+                canvas.save(output_path, "WEBP")                
+
+convert_images_person(image_directory)
