@@ -549,8 +549,8 @@ function populateDetails(name) {
    
   }
 
-
-
-
   populateCarouselFamily();
   populateCarouselFriends();
+
+//   scoring system. Lives and final score.
+// Amans Message to be improved
