@@ -3,7 +3,7 @@ import re
 import shutil
 
 # Directory where the files are located
-directory = "C:\\Users\\aman\\Desktop\\Personal\\D\\birthday-master\\birthday-master\\hiaucfhaui\\img\\d"
+directory = "C:\\Users\\aman\\Desktop\\Personal\\D\\birthday-master\\birthday-master\\game\\img\\d"
 
 # Get a list of all the files in the directory
 file_list = os.listdir(directory)
@@ -18,7 +18,7 @@ for file_name in file_list:
         person_name = file_name.rsplit('.', 1)[0].rsplit('-', 1)[-1]
         person_names.add(person_name)
 
-
+person_names = ['Sakshii']
 # Create a folder for each person
 for person_name in person_names:
     folder_path = os.path.join(directory, person_name)

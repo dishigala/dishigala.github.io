@@ -39,6 +39,8 @@ def convert_images(image_directory):
 
 def copy_image(image_directory):
     for person_folder in os.listdir(image_directory):
+        if person_folder != "Sakshii":
+            continue
         person_folder_path = os.path.join(image_directory, person_folder)
         if os.path.isdir(person_folder_path):
             for filename in os.listdir(person_folder_path):

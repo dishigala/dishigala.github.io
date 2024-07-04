@@ -5,6 +5,8 @@ def rename_files(folder_path):
     counter = 1
     for item in os.listdir(folder_path):
         item_path = os.path.join(folder_path, item)
+        print(item)
+        
 
         # Check if the item is a directory
         if os.path.isdir(item_path):
