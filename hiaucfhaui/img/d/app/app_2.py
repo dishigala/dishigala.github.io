@@ -14,11 +14,9 @@ def resize_image(image_path):
     target_width = int(height * aspect_ratio[0] / aspect_ratio[1])
     target_height = height
 
-    # Calculate the buffer size
-    buffer_size = int(target_width * buffer_percentage / 100)
-
+    
     # Calculate the new width and height with the buffer
-    new_width = target_width + buffer_size
+    new_width = target_width 
     new_height = target_height
 
     # Resize the image while maintaining the aspect ratio
@@ -31,16 +29,35 @@ def convert_images(image_directory):
         person_folder_path = os.path.join(image_directory, person_folder)
         if os.path.isdir(person_folder_path):
             for filename in os.listdir(person_folder_path):
-                if filename.endswith(".jpg") or filename.endswith(".jpeg") or filename.endswith(".png"):
+                if filename == "1.webp":
                     image_path = os.path.join(person_folder_path, filename)
                     resized_image = resize_image(image_path)
 
-                    output_filename = f"{os.path.splitext(filename)[0]}.webp"
+                    output_filename = "0.webp"
                     output_path = os.path.join(person_folder_path, output_filename)
                     resized_image.save(output_path, "WEBP")
 
-# convert_images(image_directory)
+def copy_image(image_directory):
+    for person_folder in os.listdir(image_directory):
+        person_folder_path = os.path.join(image_directory, person_folder)
+        if os.path.isdir(person_folder_path):
+            for filename in os.listdir(person_folder_path):
+                if filename.endswith(".jpg") or filename.endswith(".jpeg") or filename.endswith(".png") or filename.endswith(".JPG") or filename.endswith(".PNG"):
+                    image_path = os.path.join(person_folder_path, filename)
+                    print(image_path)
+                    original_image = Image.open(image_path)
+                    # Open the original image
 
+                    # Convert the image to WebP format                  
+                    
+                    output_filename = f"{os.path.splitext(filename)[0]}.webp"
+                    output_path = os.path.join(person_folder_path, output_filename)
+                    original_image.save(output_path, "WEBP")
+                    # Save the copied image
+
+# convert_images(image_directory)
+copy_image(image_directory)
+'''
 import os
 import csv
 
@@ -68,3 +85,5 @@ output_file = './output.csv'
 with open(output_file, 'w', newline='') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerows(data)
+
+'''

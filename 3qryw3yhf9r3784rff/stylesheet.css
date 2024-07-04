@@ -18,7 +18,7 @@
 	display: none;
 }
 .peach {
-	background-color: #f2fcff;
+	background-color: #FFF5FB;
 	
 }
 .peach-after {
@@ -31,90 +31,90 @@
 
 @-webkit-keyframes peach_alive {
 	0%{
-		background-color: rgb(192, 240, 255);
+		background-color: #FFF5FB;
 	}
 	25%{
-		background-color: #d8f6ffee;
+		background-color: #DFD0F3;
 	}
 	50%{
-		background-color: #f5fdffdd;
+		background-color: #CAB9F0;
 	}
 	75%{
-		background-color: #d8f6ffee;
+		background-color: #DFD0F3;
 	}
 	100%{
-		background-color: rgb(192, 240, 255);
+		background-color: #FFF5FB;
 	}
 }
 @-moz-keyframes peach_alive {
 	0%{
-		background-color: #d8f6ff;
+		background-color: #FFF5FB;
 	}
 	25%{
-		background-color: #d8f6ffee;
+		background-color: #DFD0F3;
 	}
 	50%{
-		background-color: #d8f6ffdd;
+		background-color: #CAB9F0;
 	}
 	75%{
-		background-color: #d8f6ffee;
+		background-color: #DFD0F3;
 	}
 	100%{
-		background-color: #d8f6ffff;
+		background-color: #FFF5FB;
 	}
 }
 
 @-o-keyframes peach_alive {
 	0%{
-		background-color: #d8f6ff;
+		background-color: #FFF5FB;
 	}
 	25%{
-		background-color: #d8f6ffee;
+		background-color: #DFD0F3;
 	}
 	50%{
-		background-color: #d8f6ffdd;
+		background-color: #CAB9F0;
 	}
 	75%{
-		background-color: #d8f6ffee;
+		background-color: #DFD0F3;
 	}
 	100%{
-		background-color: #d8f6ffff;
+		background-color: #FFF5FB;
 	}
 }
 
 @-ms-keyframes peach_alive {
 	0%{
-		background-color: #d8f6ff;
+		background-color: #FFF5FB;
 	}
 	25%{
-		background-color: #d8f6ffee;
+		background-color: #DFD0F3;
 	}
 	50%{
-		background-color: #d8f6ffdd;
+		background-color: #CAB9F0;
 	}
 	75%{
-		background-color: #d8f6ffee;
+		background-color: #DFD0F3;
 	}
 	100%{
-		background-color: #d8f6ffff;
+		background-color: #FFF5FB;
 	}
 }
 
 @keyframes peach_alive {
 	0%{
-		background-color: #FFDAB9;
+		background-color: #FFF5FB;
 	}
 	25%{
-		background-color: #FFE4B5;
+		background-color: #DFD0F3;
 	}
 	50%{
-		background-color: #FFDAB9;
+		background-color: #CAB9F0;
 	}
 	75%{
-		background-color: #FFEFD5;
+		background-color: #DFD0F3;
 	}
 	100%{
-		background-color: #FFDAB9;
+		background-color: #FFF5FB;
 	}
 }
 
@@ -1266,7 +1266,8 @@ audio {
 	bottom: 0;
 	padding:10px 0px 10px 0px;
 }
-#play, #bannar_coming, #balloons_flying,#cake_fadein,#light_candle,#wish_message,#story, #cake_cut {
+
+#play, #bannar_coming, #balloons_flying,#cake_fadein,#light_candle,#wish_message, #cake_cut,#story {
 	display: none;
 }
 
@@ -1288,13 +1289,13 @@ audio {
 }
 
 .btn-primary {
-        border-color: #466baf;
+        border-color: #CAB9F0;
         padding: 10px;
         text-transform: uppercase;
         font-family: 'Signika', sans-serif;
         font-weight: 700;
         color: #fff;
-        background-color: #466baf;
+        background-color: #CAB9F0;
 }
     .btn-primary:hover,
     .btn-primary:focus,
@@ -1303,7 +1304,7 @@ audio {
     .open .dropdown-toggle.btn-primary {
         border-color: #fff;
         color: #fff;
-        background-color: #466baf;
+        background-color: #CAB9F0;
     }
 
 
@@ -1314,3 +1315,4 @@ audio {
     		-webkit-transform: scale(0.9);
     	}
     }*/
+
