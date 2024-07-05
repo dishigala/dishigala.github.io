@@ -204,7 +204,7 @@ $('document').ready(function(){
 		
 	});
 	$('#cake_cut').click(function(){
-		window.location.href = 'game'
+		window.location.href = '/game'
 	});
 });
 
